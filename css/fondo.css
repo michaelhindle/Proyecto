@@ -27,7 +27,7 @@ a{
 
 }
 .titulo{
-    color:rgb(74, 15, 211);
+    color:rgb(0, 0, 0);
     margin-top: 35px;
     margin-bottom: 50px;
     padding-left: 50px;
@@ -35,7 +35,7 @@ a{
 .navegacion-pagina{
     margin: 10px;
     padding-top: 5px;
-    border-top: 5px solid rgba(0, 58, 250, 0.473);
+    border-top: 5px solid rgb(0, 0, 0);
     margin-inline-start: auto;    
 }
 .nav-pagina{
@@ -46,11 +46,49 @@ a{
     text-align: center;
 }
 .nav-pagina a{
-    background-color: rgba(5, 8, 182, 0.61);
+    background-color: rgba(0, 1, 39, 0.719);
 }
 .nav-pagina a:hover{
-    background-color:rgba(69, 8, 139, 0.61);
+    background-color:rgba(21, 0, 46, 0.61);
 }
-.body{
-    background-image: url(../imagen/Fondo.avif);
+body{
+    font-family: "Raleway",sans-serif;
+    font-size: 1.6rem;
+    background: repeating-linear-gradient(
+        190deg,
+        rgba(25, 0, 116, 0.5) 40px,
+        rgb(1, 95, 107, 0.5)80px, 
+        rgba(0, 34, 126, 0.5)120px,
+        rgb(0, 66, 75, 0.5)160px,
+        rgb(44, 4, 192, 0.5) 200px,
+        rgb(11, 99, 110, 0.5)240px, 
+        rgb(31, 16, 243, 0.5)280px,
+        rgba(0, 27, 145, 0.5)300px
+        ), repeating-linear-gradient(
+        -190deg,
+        rgb(25, 0, 116, 0.5) 30px,
+        rgb(1, 83, 94, 0.5)60px, 
+        rgb(0, 34, 126, 0.5)90px,
+        rgb(0, 66, 75, 0.5)120px,
+        rgb(44, 4, 192, 0.5) 150px,
+        rgb(11, 99, 110, 0.5)180px, 
+        rgb(31, 16, 243, 0.5)210px,
+        rgba(0, 27, 145, 0.5)230px
+     ),repeating-linear-gradient(
+        rgb(25, 0, 116, 0.5) 23px,
+        rgb(1, 83, 94, 0.5)50px, 
+        rgb(0, 34, 126, 0.5)100px,
+        rgb(0, 66, 75, 0.5)135px,
+        rgb(44, 4, 192, 0.5) 170px,
+        rgb(11, 99, 110, 0.5)220px, 
+        rgb(31, 16, 243, 0.5)310px,
+        rgba(0, 27, 145, 0.5)340px
+     );
+     
+}
+producto1 img{
+    background-image: url(../imagen/motor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
 }
