@@ -24,6 +24,7 @@ a{
 /*Cabecera*/
 .cabecera{
     display: flex;
+    
 
 }
 .titulo{
@@ -86,9 +87,20 @@ body{
      );
      
 }
-producto1 img{
+.producto1 img{
     background-image: url(../imagen/motor.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80px;
+    height: 500px ;
+    margin-left:30px;
+}
+.producto1{
+    display: flex;
+}
+.motor{
+    padding-bottom: 20px;
+}
+.producto1 p{
+    padding-left: 15px;
+    max-width: 500px;
 }
