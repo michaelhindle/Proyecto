@@ -74,6 +74,18 @@ a{
         flex-direction: column;
     }
 }
+@media (max-width:390){
+    .nav-pagina{
+        flex-direction: row;
+        grid-template-columns: none;
+    }
+    .navegacion-pagina{
+        float: none;
+
+    }
+
+
+}
 /*Main*/
 body{
     font-family: "Raleway",sans-serif;
@@ -145,5 +157,13 @@ body{
 
 
 /*Main contactos*/
+.informacion{
+    margin-left: 40px;
+    border-radius: 10px;
+    width: 80%;
+    border: 2px solid white;
+    border-style: outset;
+}
+
 /*Main Producto*/
 
