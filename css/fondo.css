@@ -14,13 +14,14 @@ img{
 }
 p{
     font-size: 30px;
+    color: white
 }
 h1{
     font-size: 50px;
 }
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .contenedor{
     max-width: 1200px;
@@ -120,9 +121,9 @@ body{
         rgb(11, 99, 110, 0.5)220px, 
         rgb(31, 16, 243, 0.5)310px,
         rgba(0, 27, 145, 0.5)340px
-     );
-/*Main Entrada*/    
+     );  
 }
+/*Main Entrada*/
 .producto1 img{
     background-image: url(../imagen/motor.jpg);
     background-repeat: no-repeat;
