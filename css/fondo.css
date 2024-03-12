@@ -166,4 +166,13 @@ body{
 }
 
 /*Main Producto*/
+.Producto{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-left: 40px;
+}
+.lista-motor{
+    margin-left: 40px;
+    font-size: 20px;
+}
 
