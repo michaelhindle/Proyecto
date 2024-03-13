@@ -32,27 +32,53 @@
         </div>
     </header>
     <main>
-        <section class="contendor">
-            <div>
-                <article>
-                    <h2 class="motor">
-                        ¿Que hacemos aqui?
-                    </h2>
-                    <div class="producto1">
-
-                        <img src="imagen/Frabrica.jpeg">
-                        <p>
-                            Bienvenidos a Argus S.A., líder en el diseño, desarrollo y fabricación de
-                            motores de alto rendimiento para una amplia gama de aplicaciones industriales y comerciales.
-                            Desde nuestra fundación, nos hemos dedicado a impulsar la innovación y la excelencia en la
-                            industria de motores, ofreciendo soluciones de vanguardia que cumplen con los más altos
-                            estándares de calidad y eficiencia.!
-                        </p>
-                    </div>
-
-                </article>
+        <div class="contenedor">
+            <div class="anio">
+                <p><span>Argus 75</span> años siendo líder mundial en motores en vanguardia</p>
             </div>
-        </section>
+            <div>
+                <h2 class="motor">
+                    ¿Que hacemos aqui?
+                </h2>
+                <div class="producto1">
+
+                    <img src="imagen/Frabrica.jpeg">
+                    <p>
+                        Bienvenidos a Argus S.A., líder en el diseño, desarrollo y fabricación de
+                        motores de alto rendimiento para una amplia gama de aplicaciones industriales y comerciales.
+                        Desde nuestra fundación, nos hemos dedicado a impulsar la innovación y la excelencia en la
+                        industria de motores, ofreciendo soluciones de vanguardia que cumplen con los más altos
+                        estándares de calidad y eficiencia.!
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="formulario contenedor">
+            <form action="server.php" method="post">
+
+                <h3>Tus datos:</h3>
+                <label for="campo-nombre">Nombre: </label> 
+                <input id="campo-nombre" type="text" name="nombre" placeholder="Escribe tu nombre"> <br>
+                <label for="campo-email">Email: </label> 
+                <input id="campo-email" type="text" name="nombre" placeholder="Escribe tu Email"> <br>
+                <label for="campo-direccion">Direccion: </label> 
+                <input id="campo-direccion" type="text" name="nombre" placeholder="Escribe tu Direccion"> <br>
+
+                <h3>Forma de envio</h3>
+                <input type="checkbox" name="local" value="1">Local<br>
+                <input type="checkbox" name="enviar" value="1">Enviar<br>
+
+                <h3>Producto</h3>
+                <input type="radio" name="elecion" value="motor" checked>Motor <br>
+                <input type="radio" name="elecion" value="caja-cambio"> Caja de cambio <br>
+                <input type="radio" name="elecion" value="turbocompresores">Turbocompresores <br>
+
+                <h3>Mas datos</h3>
+                <textarea name="textarea" rows="30" cols="100" placeholder="Tu mensaje"></textarea><br>
+                <input class="boton" type="submit" value="Enviar"><br>
+            </form>
+        </div>
     </main>
 </body>
 <footer>

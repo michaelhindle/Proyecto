@@ -1,6 +1,7 @@
 /*Global*/
 html {
     box-sizing: border-box;
+    height: 100%;
 }
 *, 
 *:before, 
@@ -16,12 +17,12 @@ p{
     font-size: 30px;
     color: white
 }
-h1{
+h1, h2{
     font-size: 50px;
 }
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 .contenedor{
     max-width: 1200px;
@@ -56,8 +57,8 @@ a{
 }
 .nav-pagina{
     margin: 10px;
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
+    display: flex;
+    align-content: 200px 200px 200px 200px;
     min-width: none;
     gap: 20px;
     text-align: center;
@@ -70,19 +71,20 @@ a{
 .nav-pagina a:hover{
     color: aquamarine;
 }
-@media (max-width:768px){
+/*@media (max-width:768px){
     .cabecera{
         flex-direction: column;
     }
-}
-@media (max-width:390){
+}*/
+@media (max-width:768px){
     .nav-pagina{
-        flex-direction: row;
-        grid-template-columns: none;
+        flex-direction: column;
     }
-    .navegacion-pagina{
-        float: none;
-
+    .cabecera{
+        flex-direction: column;
+    }
+    html{
+        font-size: small;
     }
 
 
@@ -92,6 +94,7 @@ body{
     font-family: "Raleway",sans-serif;
     font-size: 16px;
     margin: 0;
+    height: 100%;
     background: repeating-linear-gradient(
         190deg,
         rgba(25, 0, 116, 0.5) 40px,
@@ -123,6 +126,12 @@ body{
         rgba(0, 27, 145, 0.5)340px
      );  
 }
+main{
+    min-height: 100%
+}
+footer{
+    margin: 25px auto;
+}
 /*Main Entrada*/
 .producto1 img{
     background-image: url(../imagen/motor.jpg);
@@ -141,6 +150,17 @@ body{
     padding-left: 15px;
     max-width: 500px;
 }
+.anio{
+    text-align: center;
+    /*margin: 90px auto;*/
+    background-color: rgba(0, 0, 255, 0.205);
+}
+.anio span{
+    color: #33a000;
+}
+.anio p{
+    font-size: 60px;
+}
 /*Main Nosotros*/
 .empresa{
     display: grid;
@@ -153,17 +173,32 @@ body{
 .empresa p{
     max-width: 100%;
 }
+.formulario{
+    font-size: 30px; 
+}
+.boton{
+    background-position: center;
+    font-size: 20px;
+}
 
 
 
 
 /*Main contactos*/
 .informacion{
-    margin-left: 40px;
+    margin: auto;
     border-radius: 10px;
     width: 80%;
-    border: 2px solid white;
-    border-style: outset;
+    border: 0px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.mapa{
+    margin: 30px;
+}
+.mapa iframe{
+    width: 100%;
 }
 
 /*Main Producto*/
@@ -176,4 +211,17 @@ body{
     margin-left: 40px;
     font-size: 20px;
 }
-
+.lista-motor dt{
+    font-weight: bold;
+    font-size: 30px;
+}
+.lista-motor dd{
+    color: white;
+}
+dt{
+    display: flex;
+    align-items: center;
+}
+dt img{
+    max-width: 6%;
+}
