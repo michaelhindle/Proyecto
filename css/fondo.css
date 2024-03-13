@@ -9,7 +9,6 @@ html {
 box-sizing: inherit;
 }
 img{ 
-    object-fit: cover;
     max-width: 100%;
     display: block;
 }
@@ -19,6 +18,9 @@ p{
 }
 h1, h2{
     font-size: 40px;
+}
+p{
+    font-size: 20px;
 }
 a{
     text-decoration: none;
@@ -69,11 +71,6 @@ a{
 .nav-pagina a:hover{
     color: aquamarine;
 }
-/*@media (max-width:768px){
-    .cabecera{
-        flex-direction: column;
-    }
-}*/
 @media (max-width:800px){
     .titulo{
         padding-left: 0px;
@@ -87,6 +84,13 @@ a{
     html{
         font-size: small;
     }
+    p{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    
 
 
 }
@@ -130,21 +134,37 @@ body{
 main{
     min-height: 100%
 }
-footer{
-    margin: 25px auto;
+
+/*Footer*/
+.footer{
+    background-color: black;
+}
+.footer p{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /*Main Entrada*/
+.producto1{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 30px;
+}
 .producto1 img{
     background-image: url(../imagen/motor.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px ;
+    max-height: 100%;
     margin-left:30px;
+    object-fit: cover;
+    
+    
 }
-.producto1{
-    display: flex;
-}
+
+
 .motor{
+    margin-left: 30px;
     padding-bottom: 20px;
 }
 .producto1 p{
@@ -162,20 +182,26 @@ footer{
 .anio p{
     font-size: 60px;
 }
+.cont-formulario{
+    padding-top: 20px;
+    margin-left: 20px;
+}
 .formulario{
     font-size: 30px; 
     margin-left: auto;
     margin-right: auto;
     text-align: left;
     width: 500px;
+    background-color: rgba(128, 128, 128, 0.377);
+    border: 2px solid rgba(128, 128, 128, 0.377) ;
 }
 .campo input[type=text]{
-    width: 100%;
-    margin-bottom: 15px;
-    text-align: center;
+    display: block;
+    width: 80%;
+    margin: 10px 10px 10px 30px; 
 }
-.campo{
-    
+.campo-det{
+    display: block;
 }
 .boton{
     text-align: center;
@@ -189,13 +215,40 @@ footer{
     border: none;
     border-radius: 10px ;
 }
+.textarea{
+    width: 400px;
+    height: 200px;
+}
 @media(max-width: 800px){
     .producto1{
+        display: flex;
         flex-direction: column;
+        padding-right: 30px;
     }
     .textarea{
         width: 100%;
         max-width: 500px;
+    }
+    .anio p{
+        font-size: 30px;
+    }
+    .formulario{
+        font-size: 20px; 
+        width: 350px;
+    }
+    .textarea{
+        width: 300px;
+        height: 150px;       
+    }
+}
+@media(max-width: 400px){
+    .textarea{
+        width: 200px;
+        height: 100px;
+    }
+    .formulario{
+        font-size: 15px; 
+        width: 300px;
     }
 }
 
@@ -210,6 +263,15 @@ footer{
 }
 .empresa p{
     max-width: 100%;
+}
+@media(max-width: 800px){
+    .empresa{
+        display: flex;
+        flex-direction: column;
+    }
+    .empresa p{
+        font-size: 20px;
+    }
 }
 
 
@@ -242,16 +304,20 @@ footer{
 .lista-motor{
     margin-left: 40px;
     font-size: 20px;
+    width: 70%;
 }
 .info-motor{
     margin-left: 30px;
+    font-size: 20px;
 }
 .lista-motor dt{
     font-weight: bold;
     font-size: 30px;
 }
 .lista-motor dd{
+    margin-bottom: 20px;
     color: white;
+    font-size: 20px;
 }
 dt{
     display: flex;
@@ -259,4 +325,18 @@ dt{
 }
 dt img{
     max-width: 4%;
+}
+@media(max-width: 800px){
+    .Producto h2{
+        font-size: 20px ;
+    }
+    .info-motor{
+        font-size: 14px;
+    }
+    .lista-motor dd{
+        font-size: 14px;
+    }
+    .lista-motor dt{
+        font-size: 20px;
+    }
 }

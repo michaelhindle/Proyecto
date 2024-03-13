@@ -54,8 +54,8 @@
             </div>
             
         </div>
-        <div class="contenedor formulario ">
-            <form action="server.php" method="post">
+        <div class="contenedor cont-formulario">
+            <form class="formulario" action="server.php" method="post">
 
                 <h3>Tus datos:</h3>
                 <div class="campo">
@@ -73,22 +73,33 @@
 
                 <h3>Forma de envio</h3>
                 <div class="campo">
-                     
-                    <input type="radio" name="local" value="local">
-                    <label for="campo-direccion">Local: </label>
-                    
-                    <input type="radio" name="local" value="envio">
-                    <label for="campo-direccion">Enviar: </label>
+                    <div class="campo-det">
+                        <input type="radio" name="local" value="local" checked>
+                        <label for="campo-direccion">Local: </label>
+                    </div>  
+                    <div class="campo-det">
+                        <input type="radio" name="local" value="envio">
+                        <label for="campo-direccion">Enviar: </label>
+                    </div>
                 </div>
                 <h3>Producto</h3>
                 <div class="campo">
-                    <input type="radio" name="elecion" value="motor" checked>Motor 
-                    <input type="radio" name="elecion" value="caja-cambio"> Caja de cambio
-                    <input type="radio" name="elecion" value="turbocompresores">Turbocompresores
+                    <div class="campo-det">
+                        <input type="radio" name="elecion" value="motor" checked>
+                        <label for="campo-producto">Motor: </label>
+                    </div>  
+                    <div class="campo-det">
+                        <input type="radio" name="elecion" value="caja-cambio"> 
+                        <label for="campo-producto">Caja de cambio: </label>
+                    </div>  
+                    <div class="campo-det">
+                        <input type="radio" name="elecion" value="turbocompresores">
+                        <label for="campo-producto">Turbocompresores: </label>
+                    </div> 
                 </div>
                 <h3>Mas datos</h3>
                 <div class="campo">
-                    <textarea class="textarea" name="textarea" rows="13" cols="55" placeholder="Tu mensaje"></textarea><br>
+                    <textarea class="textarea" name="textarea" placeholder="Tu mensaje"></textarea><br>
                 </div>
                 <div class="boton">
                     <input type="submit" value="Enviar">
@@ -98,8 +109,8 @@
     </main>
 </body>
 <footer>
-    <div>
-        <p>Todos los documentos tienen derechos del autor</p>
+    <div class="footer">
+        <p>© 19945 Argus. Todos los derechos reservados.</p>
     </div>
 </footer>
 
