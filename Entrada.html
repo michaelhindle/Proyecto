@@ -54,29 +54,45 @@
             </div>
             
         </div>
-        <div class="formulario contenedor">
+        <div class="contenedor formulario ">
             <form action="server.php" method="post">
 
                 <h3>Tus datos:</h3>
-                <label for="campo-nombre">Nombre: </label> 
-                <input id="campo-nombre" type="text" name="nombre" placeholder="Escribe tu nombre"> <br>
-                <label for="campo-email">Email: </label> 
-                <input id="campo-email" type="text" name="nombre" placeholder="Escribe tu Email"> <br>
-                <label for="campo-direccion">Direccion: </label> 
-                <input id="campo-direccion" type="text" name="nombre" placeholder="Escribe tu Direccion"> <br>
+                <div class="campo">
+                    <label for="campo-nombre">Nombre: </label> 
+                    <input id="campo-nombre" type="text" name="nombre" placeholder="Escribe tu nombre">
+                </div>
+                <div class="campo">
+                    <label for="campo-email">Email: </label> 
+                    <input id="campo-email" type="text" name="nombre" placeholder="Escribe tu Email">
+                </div>
+                <div class="campo">
+                    <label for="campo-direccion">Direccion: </label> 
+                    <input id="campo-direccion" type="text" name="nombre" placeholder="Escribe tu Direccion">
+                </div>
 
                 <h3>Forma de envio</h3>
-                <input type="checkbox" name="local" value="1">Local<br>
-                <input type="checkbox" name="enviar" value="1">Enviar<br>
-
+                <div class="campo">
+                     
+                    <input type="radio" name="local" value="local">
+                    <label for="campo-direccion">Local: </label>
+                    
+                    <input type="radio" name="local" value="envio">
+                    <label for="campo-direccion">Enviar: </label>
+                </div>
                 <h3>Producto</h3>
-                <input type="radio" name="elecion" value="motor" checked>Motor <br>
-                <input type="radio" name="elecion" value="caja-cambio"> Caja de cambio <br>
-                <input type="radio" name="elecion" value="turbocompresores">Turbocompresores <br>
-
+                <div class="campo">
+                    <input type="radio" name="elecion" value="motor" checked>Motor 
+                    <input type="radio" name="elecion" value="caja-cambio"> Caja de cambio
+                    <input type="radio" name="elecion" value="turbocompresores">Turbocompresores
+                </div>
                 <h3>Mas datos</h3>
-                <textarea name="textarea" rows="30" cols="100" placeholder="Tu mensaje"></textarea><br>
-                <input class="boton" type="submit" value="Enviar"><br>
+                <div class="campo">
+                    <textarea class="textarea" name="textarea" rows="13" cols="55" placeholder="Tu mensaje"></textarea><br>
+                </div>
+                <div class="boton">
+                    <input type="submit" value="Enviar">
+                </div>
             </form>
         </div>
     </main>

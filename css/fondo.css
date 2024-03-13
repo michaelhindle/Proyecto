@@ -18,7 +18,7 @@ p{
     color: white
 }
 h1, h2{
-    font-size: 50px;
+    font-size: 40px;
 }
 a{
     text-decoration: none;
@@ -35,17 +35,15 @@ a{
     justify-content: space-between;
     min-height: 70px;
     align-items: center;
-
 }
 .titulo img{
     object-fit: cover;
     height: 50px;
-    padding-left: 50px;
 }
 .titulo{
     color:rgb(0, 0, 0);
     margin-top: 15px;
-    padding-left: 50px;
+    padding-left: 100px;
     display: flex;
     align-items: center;
 }
@@ -53,7 +51,7 @@ a{
     margin: 10px;
     padding-top: 5px;
     border-top: 5px solid rgb(0, 0, 0);
-    margin-inline-start: auto;    
+    /*margin-inline-start: auto;    */
 }
 .nav-pagina{
     margin: 10px;
@@ -76,7 +74,10 @@ a{
         flex-direction: column;
     }
 }*/
-@media (max-width:768px){
+@media (max-width:800px){
+    .titulo{
+        padding-left: 0px;
+    }
     .nav-pagina{
         flex-direction: column;
     }
@@ -147,7 +148,7 @@ footer{
     padding-bottom: 20px;
 }
 .producto1 p{
-    padding-left: 15px;
+    padding-left: 30px;
     max-width: 500px;
 }
 .anio{
@@ -161,6 +162,43 @@ footer{
 .anio p{
     font-size: 60px;
 }
+.formulario{
+    font-size: 30px; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 500px;
+}
+.campo input[type=text]{
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.campo{
+    
+}
+.boton{
+    text-align: center;
+    
+    
+}
+.boton input{
+    background-color: #33a000;
+    background-position: center;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px ;
+}
+@media(max-width: 800px){
+    .producto1{
+        flex-direction: column;
+    }
+    .textarea{
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
 /*Main Nosotros*/
 .empresa{
     display: grid;
@@ -173,13 +211,7 @@ footer{
 .empresa p{
     max-width: 100%;
 }
-.formulario{
-    font-size: 30px; 
-}
-.boton{
-    background-position: center;
-    font-size: 20px;
-}
+
 
 
 
@@ -211,6 +243,9 @@ footer{
     margin-left: 40px;
     font-size: 20px;
 }
+.info-motor{
+    margin-left: 30px;
+}
 .lista-motor dt{
     font-weight: bold;
     font-size: 30px;
@@ -223,5 +258,5 @@ dt{
     align-items: center;
 }
 dt img{
-    max-width: 6%;
+    max-width: 4%;
 }
