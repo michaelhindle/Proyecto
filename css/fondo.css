@@ -175,7 +175,7 @@ footer a{
     padding-bottom: 2rem;
 }
 .producto1 p{
-    margin-right: 6rem;
+    margin-right: 4rem;
     padding-left: 3rem;
     max-width: 50rem;
     text-align: justify;
@@ -236,6 +236,11 @@ footer a{
         flex-direction: column;
         padding-right: 3rem;
     }
+    .producto1 p{
+        font-size: 1.25rem;
+        padding-right: 0rem;
+        margin-right: 0rem;
+    }
     .textarea{
         width: 100%;
         max-width: 50rem;
@@ -259,7 +264,7 @@ footer a{
     }
     .formulario{
         font-size: 1.5rem; 
-        width: 30rem;
+        width: 20rem;
     }
 }
 
