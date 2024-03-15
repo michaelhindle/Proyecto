@@ -247,6 +247,7 @@ footer a{
     }
     .anio p{
         font-size: 3rem;
+        padding: 0rem 1rem;
     }
     .formulario{
         font-size: 2rem; 
@@ -259,12 +260,15 @@ footer a{
 }
 @media(max-width: 500px){
     .textarea{
-        width: 20rem;
+        width: 15rem;
         height: 10rem;
     }
     .formulario{
         font-size: 1.5rem; 
         width: 20rem;
+    }
+    .anio p{
+        font-size: 2.5rem;
     }
 }
 
