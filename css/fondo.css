@@ -66,7 +66,7 @@ a{
 .nav-pagina a{
     font-weight: 600;
     font-size: 25px;
-    color: #60A000;
+    color: #33a000;
 }
 .nav-pagina a:hover{
     color: aquamarine;
@@ -137,14 +137,17 @@ main{
 
 /*Footer*/
 footer{
-    margin: auto;
     background-color: black;
+    padding: 5px 0px;
 }
 .footer p{
     font-size: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+footer a{
+    color: white;
 }
 
 /*Main Entrada*/
@@ -158,10 +161,8 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     max-height: 100%;
-    margin-left:30px;
     object-fit: cover;
-    
-    
+    margin-left: 30px;
 }
 
 
@@ -170,9 +171,10 @@ footer{
     padding-bottom: 20px;
 }
 .producto1 p{
-    margin-right: 30px;
+    margin-right: 60px;
     padding-left: 30px;
     max-width: 500px;
+    text-align: justify;
 }
 .anio{
     text-align: center;
@@ -198,6 +200,7 @@ footer{
     background-color: rgba(128, 128, 128, 0.377);
     border: 2px solid rgba(128, 128, 128, 0.377) ;
     padding-bottom: 30px;
+    padding-left: 20px;
     margin-bottom: 50px;
 }
 .campo input[type=text]{
