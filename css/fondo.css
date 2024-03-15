@@ -168,6 +168,7 @@ main{
     padding-bottom: 20px;
 }
 .producto1 p{
+    margin-right: 30px;
     padding-left: 30px;
     max-width: 500px;
 }
@@ -194,6 +195,8 @@ main{
     width: 500px;
     background-color: rgba(128, 128, 128, 0.377);
     border: 2px solid rgba(128, 128, 128, 0.377) ;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
 }
 .campo input[type=text]{
     display: block;
@@ -253,16 +256,66 @@ main{
 }
 
 /*Main Nosotros*/
+.Nosotros{
+    padding-left: 30px;
+    padding-right: 30px;
+}
 .empresa{
-    display: grid;
-    grid-template-columns: 40% 60%;
-    column-gap: 30px;
     padding-left: 30px;
     background-color: rgba(0, 0, 255, 0.205);
-    padding: 20px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    place-items: center;
 }
 .empresa p{
     max-width: 100%;
+}
+.empresa img{
+    max-width: 60%;
+    max-height: 100%;
+    padding-top: 30px;
+    object-fit: cover;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fechas{
+    
+    max-width: 500px;
+    margin: 20px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.info-fechas-izq{
+    text-align: right;
+}
+.info-fechas-izq p {
+    font-size: 15px;
+}
+.info-fechas-izq span{
+    font-size: 30px;
+    font-weight: bold;
+    color: #33a000;
+}
+.fechas-izq {
+    max-width: 350px;
+}
+.info-fechas-der{
+    text-align: left;
+}
+.info-fechas-der p {
+    font-size: 15px;
+}
+.info-fechas-der span{
+    font-size: 30px;
+    font-weight: bold;
+    color: #33a000;
+}
+.fechas-der{
+    max-width: 350px;
+    margin-left: 400px;
 }
 @media(max-width: 800px){
     .empresa{
@@ -271,6 +324,41 @@ main{
     }
     .empresa p{
         font-size: 20px;
+    }
+    .fechas{
+        max-width: 500px;
+    }
+    .fechas-izq{
+        margin-right: 340px;
+    }
+    .info-fechas-izq p{
+        font-size: 10px;
+    }
+    .info-fechas-izq span{
+        font-size: 20px;
+    }
+    .fechas-der{
+        margin-left: 340px;;
+    }
+
+    .info-fechas-der p {
+        font-size: 10px;
+    }
+    .info-fechas-der span{
+        font-size: 20px;
+    }
+
+}
+@media(max-width: 400px){
+    .fechas{
+        max-width:500px ;
+    }
+    .fechas-izq{
+        padding-right: 20px;
+        margin-right: 0px;
+    }
+    .fechas-der{
+        margin-left: 0px;
     }
 }
 
@@ -284,8 +372,12 @@ main{
     border-radius: 10px;
     width: 80%;
     border: 0px;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
+    color: white;
+}
+.informacion a{
+    color: white;
 }
 
 .mapa{
@@ -294,7 +386,17 @@ main{
 .mapa iframe{
     width: 100%;
 }
-
+@media(max-width: 800px){
+    .informacion{
+        font-size: 10px;
+    }
+    .mapa{
+        align-items: center;
+    }
+    .mapa iframe{
+        height:auto;
+    }
+}
 /*Main Producto*/
 .Producto{
     display: grid;
